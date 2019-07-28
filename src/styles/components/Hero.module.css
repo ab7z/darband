@@ -1,0 +1,14 @@
+h1 {
+    color: red;
+}
+
+.hero {
+    background: linear-gradient(90deg, rgba(0,0,0,.3), rgba(0,0,0,.4))
+        ,url("../../images/hero.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+
+}
