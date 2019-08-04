@@ -1,14 +1,55 @@
 h1 {
-    color: red;
+    margin-bottom: 2rem;
+}
+
+p {
+    font-size: 3rem;
+    text-transform: uppercase;
+    word-spacing: 3rem;
+    letter-spacing: 3px;
+}
+
+h1, p {
+    color: white;
+    text-align: center;
+    transform: translateY(-10rem);
 }
 
 .hero {
-    background: linear-gradient(to bottom, rgba(0,0,0,.7), rgba(0,0,0,.4))
-        ,url("../../images/hero.png");
+    background: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, .7),
+            rgba(0, 0, 0, .4)
+    ), url("../../images/hero.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
+}
 
+.heroContainer {
+    width: inherit;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero > .heroContainer > svg {
+    width: 100%;
+    font-size: 1.5rem;
+    animation: toggleDown 7s infinite;
+}
+
+@keyframes toggleDown {
+    0% {
+        transform: translateY(calc(100vh - 80rem)) scale(3, 2);
+    }
+    50% {
+        transform: translateY(calc(100vh - 77rem)) scale(3, 2);
+    }
+    100% {
+        transform: translateY(calc(100vh - 80rem)) scale(3, 2);
+    }
 }

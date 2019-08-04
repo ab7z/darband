@@ -1,6 +1,8 @@
 import React from 'react';
 import styles from '../styles/components/Hero.module.css';
-import { FormattedMessage } from "react-intl";
+import {FormattedMessage} from "react-intl";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faAngleDoubleDown} from "@fortawesome/free-solid-svg-icons";
 
 class Hero extends React.Component {
 
@@ -8,9 +10,15 @@ class Hero extends React.Component {
         return (
             <React.Fragment>
                 <div className={styles.hero}>
-                    <h1>
-                        <FormattedMessage id={"darband.hero.main.h1"}/>
-                    </h1>
+                    <div className={styles.heroContainer}>
+                        <h1>
+                            <FormattedMessage id={"darband.hero.h1.title"}/>
+                        </h1>
+                        <p>
+                            <FormattedMessage id={"darband.hero.p.title"}/>
+                        </p>
+                        <FontAwesomeIcon icon={faAngleDoubleDown} size={"3x"} color={"white"}/>
+                    </div>
                 </div>
             </React.Fragment>
         );
