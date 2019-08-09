@@ -12,9 +12,14 @@
 
 .imageContainer img {
     width: 100%;
-    transform: scale(1.15);
+    transform: scale(1.13);
     transition: transform .4s, opacity .4s;
     opacity: .7;
+}
+
+.imageContainer img:hover {
+    transform: scale(1.25);
+    opacity: 1;
 }
 
 @media all and (max-width: 768px) {

@@ -1,0 +1,85 @@
+.testimonials {
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container > h2 {
+    text-align: center;
+    font-size: 4rem;
+}
+
+.container > h2:after {
+    content: '';
+    display: block;
+    width: 20rem;
+    height: 2px;
+    background-color: var(--light-orange);
+    margin: 5rem auto;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.card > p {
+    font-size: 2.1rem;
+    margin: 3rem 0;
+    text-align: justify;
+}
+
+.ref {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: baseline;
+    justify-content: flex-end;
+}
+
+.ref > p {
+    margin-left: 2rem;
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+.stars * {
+    color: #ffc733;
+}
+
+.stars svg {
+    font-size: 1.5rem;
+}
+
+@media all and (max-width: 1024px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card:not(:last-of-type) {
+        margin-bottom: 5rem;
+    }
+}
+
+@media all and (max-width: 320px) {
+    .card {
+        width: 280px;
+    }
+}
