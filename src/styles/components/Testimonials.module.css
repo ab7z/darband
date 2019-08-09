@@ -19,7 +19,7 @@
     display: block;
     width: 20rem;
     height: 2px;
-    background-color: var(--light-orange);
+    background-color: #0fb9b1;
     margin: 5rem auto;
 }
 
@@ -45,6 +45,10 @@
     text-align: justify;
 }
 
+.card > svg {
+    color: #3867d6;
+}
+
 .ref {
     display: flex;
     flex-direction: row;
@@ -60,7 +64,7 @@
 }
 
 .stars * {
-    color: #ffc733;
+    color: #f7b731;
 }
 
 .stars svg {
