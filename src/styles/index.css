@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Great+Vibes|Roboto:300&display=swap');
 
+:root {
+    --light-orange: #EA8117;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -30,10 +34,17 @@ h1 {
     font-family: 'Great Vibes', cursive;
     text-transform: capitalize;
     font-size: 10rem;
-    font-weight: 300;
+}
 
+h1, h2 {
+    font-weight: 300;
 }
 
 p {
     font-family: 'Roboto', sans-serif;
+}
+
+section {
+    width: 100%;
+    margin: 10rem auto;
 }

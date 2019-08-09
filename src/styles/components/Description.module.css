@@ -1,0 +1,85 @@
+.container {
+    height: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub1 > h2 {
+    text-align: center;
+    font-size: 4rem;
+}
+
+.sub1 > h2:after {
+    content: '';
+    display: block;
+    width: 20rem;
+    height: 2px;
+    background-color: var(--light-orange);
+    margin: 4rem auto;
+}
+
+.sub1 > p {
+    font-size: 2rem;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    width: 80%;
+    margin-bottom: 5rem;
+}
+
+.sub2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.card h3 {
+    font-size: 2.5rem;
+    margin: 2rem 0;
+}
+
+.card p {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.card svg {
+    color: #fed330;
+}
+
+.card:first-of-type svg {
+    color: #fd9644;
+}
+
+.card:last-of-type svg {
+    color: #26de81;
+}
+
+@media all and (max-width: 768px) {
+    .sub1 > h2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sub2 {
+        flex-wrap: wrap;
+    }
+}

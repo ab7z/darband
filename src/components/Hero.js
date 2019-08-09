@@ -9,7 +9,7 @@ class Hero extends React.Component {
     render() {
         return (
             <React.Fragment>
-                <div className={styles.hero}>
+                <header className={styles.hero}>
                     <div className={styles.heroContainer}>
                         <h1>
                             <FormattedMessage id={"darband.hero.h1.title"}/>
@@ -19,7 +19,7 @@ class Hero extends React.Component {
                         </p>
                         <FontAwesomeIcon icon={faAngleDoubleDown} size={"3x"} color={"white"}/>
                     </div>
-                </div>
+                </header>
             </React.Fragment>
         );
     }
