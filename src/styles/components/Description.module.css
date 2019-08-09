@@ -63,6 +63,8 @@
 
 .card svg {
     color: #fed330;
+    margin-bottom: 2rem;
+    font-size: 5rem;
 }
 
 .card:first-of-type svg {

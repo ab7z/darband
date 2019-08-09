@@ -4,12 +4,16 @@
   "darband.features.heading.title.part1": "GET FOOD FAST",
   "darband.features.heading.title.part2": "NOT FAST FOOD",
   "darband.features.heading.subtitle": "Hallo, wir sind das Darband Restaurants, Euer Premium was persisches Essen angeht. Wir wissen, dass Sie Wert auf ein gesundes Essen legen, darin sind wir sehr gut.",
-  "darband.features.uptime.h3": "Immer für Sie da",
+  "darband.features.uptime.h3": "Immer für Euch da",
   "darband.features.uptime.p": "",
   "darband.features.time.h3": "Nur wenige Minuten",
   "darband.features.time.p": "",
   "darband.features.healthy.h3" : "100% organisch",
   "darband.features.healthy.p" : "",
   "darband.lorem": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
-  "darband.contact.title": "Wir sind für Euch da"
+  "darband.contact.title": "Wir sind für Euch da",
+  "darband.contact.call": "Ruf uns an",
+  "darband.contact.route": "Besuche uns",
+  "darband.contact.party1": "Ihr",
+  "darband.contact.party2": "wir"
 }

@@ -5,6 +5,7 @@ import Description from "./components/Description";
 import Foods from "./components/Foods";
 import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
             <Foods/>
             <Testimonials/>
             <Contact/>
+            <Footer/>
         </div>
     );
 }
