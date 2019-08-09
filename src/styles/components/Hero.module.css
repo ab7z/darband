@@ -45,14 +45,24 @@
     animation: toggleDown 7s infinite;
 }
 
+@media all and (max-width: 320px) {
+    .heroContainer > h1 {
+        font-size: 8rem;
+    }
+
+    .hero > .heroContainer > svg {
+        transform: translateY(3rem);
+    }
+}
+
 @keyframes toggleDown {
     0% {
-        transform: translateY(calc(100vh - 80rem)) scale(3, 2);
+        transform: translateY(calc(100vh - 60rem)) scale(3, 2);
     }
     50% {
-        transform: translateY(calc(100vh - 77rem)) scale(3, 2);
+        transform: translateY(calc(100vh - 57rem)) scale(3, 2);
     }
     100% {
-        transform: translateY(calc(100vh - 80rem)) scale(3, 2);
+        transform: translateY(calc(100vh - 60rem)) scale(3, 2);
     }
 }

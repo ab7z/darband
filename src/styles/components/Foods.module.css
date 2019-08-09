@@ -1,0 +1,30 @@
+.foods {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.imageContainer {
+    width: 25%;
+    overflow: hidden;
+    background-color: black;
+}
+
+.imageContainer img {
+    width: 100%;
+    transform: scale(1.15);
+    transition: transform .4s, opacity .4s;
+    opacity: .7;
+}
+
+@media all and (max-width: 768px) {
+    .imageContainer {
+        width: 50%;
+    }
+}
+
+@media all and (max-width: 425px) {
+    .imageContainer {
+        width: 100%;
+    }
+}
