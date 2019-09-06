@@ -57,12 +57,12 @@
 
 @keyframes toggleDown {
     0% {
-        transform: translateY(calc(100vh - 60rem)) scale(3, 2);
+        transform: translateY(calc(100vh - 70rem)) scale(3, 2);
     }
     50% {
-        transform: translateY(calc(100vh - 57rem)) scale(3, 2);
+        transform: translateY(calc(100vh - 67rem)) scale(3, 2);
     }
     100% {
-        transform: translateY(calc(100vh - 60rem)) scale(3, 2);
+        transform: translateY(calc(100vh - 70rem)) scale(3, 2);
     }
 }

@@ -237,4 +237,8 @@ modules.xml
 # Sonarlint plugin
 .idea/sonarlint
 
+.firebase/
+
+*.cache
+
 # End of https://www.gitignore.io/api/git,node,macos,pycharm+all
