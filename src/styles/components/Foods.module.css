@@ -36,6 +36,10 @@
     cursor: pointer;
 }
 
+.modalContainer {
+
+}
+
 @media all and (max-width: 768px) {
     .imageContainer {
         flex-basis: 100%;
