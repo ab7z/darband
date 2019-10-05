@@ -1,19 +1,20 @@
 .foods {
     display: flex;
     flex-direction: column;
-    /*flex-wrap: wrap;*/
+    background-color: rgba(0, 0, 0, .05);
 }
 
 .foods > h2 {
     text-align: center;
     font-size: 4rem;
-    margin-bottom: 6rem;
+    margin: 6rem 0;
 }
 
 .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 12rem;
 }
 
 .imageContainer {
@@ -21,6 +22,7 @@
     margin: 1rem;
     overflow: hidden;
     background-color: black;
+    border-radius: 1rem;
 }
 
 .imageContainer img {
@@ -37,7 +39,90 @@
 }
 
 .modalContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
 
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.modalContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: 40px;
+    bottom: 40px;
+    border: 1px solid #ccc;
+    background: rgb(255, 255, 255);
+    overflow: auto;
+    overflow-scrolling: touch;
+    border-radius: 1rem;
+    outline: none;
+    padding: 20px;
+    width: 70%;
+    margin: 0 auto;
+    max-height: 90vh;
+    height: 70vh;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(
+            rgba(0, 0, 0, .65),
+            rgba(0, 0, 0, .8)
+    ), url("../../images/modal-background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.modalHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modalHeader > h2 {
+    text-align: center;
+    flex-grow: 1;
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 2rem;
+}
+
+.modalInfo {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 80%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.modalInfoText {
+    text-align: center;
+    width: 85%;
+    margin: 8rem auto 0;
+    font-size: 2.7rem;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    line-height: 4rem;
+}
+
+.modalIcons {
+
+}
+
+.modalPrice {
+    font-size: 3rem;
+    margin-top: 4rem;
+    letter-spacing: 2px;
+    font-weight: 300;
+    color: #20bf6b;
 }
 
 @media all and (max-width: 768px) {

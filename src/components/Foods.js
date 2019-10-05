@@ -10,17 +10,21 @@ class Foods extends React.Component {
         super(props);
         this.state = {
             foods: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16],
-            isOpen: false
+            isOpen: false,
+            currentFood: null
         };
         Modal.setAppElement('#root');
+    }
+
+    icons = {
+        1: []
     };
 
-    /**
-     *
-     * @param boolean
-     */
-    setIsOpen = (boolean) => {
-        this.setState({isOpen: boolean});
+    setIsOpen = (boolean, food) => {
+        this.setState({
+            isOpen: boolean,
+            currentFood: food
+        });
     };
 
     render() {
@@ -32,7 +36,8 @@ class Foods extends React.Component {
                         {this.state.foods.map((food, index) =>
                             <div className={styles.imageContainer}
                                  key={index}
-                                 onClick={() => this.setIsOpen(true)}
+                                 onClick={() => this.setIsOpen(true, food)}
+                                 id={food}
                             >
                                 <img src={require('../images/' + food + '.jpeg')} alt=""/>
                             </div>
@@ -40,21 +45,36 @@ class Foods extends React.Component {
                     </div>
                 </section>
                 <Modal isOpen={this.state.isOpen}
-                       onRequestClose={() => this.setIsOpen(false)}
+                       onRequestClose={() => this.setIsOpen(false, null)}
                        contentLabel={"Gerichte"}
-                       style={{
-                           overlay: {
-                               backgroundColor: 'rgba(0, 0, 0, .4)'
-                           }
-                       }}
+                       className={styles.modalContent}
+                       overlayClassName={styles.modalOverlay}
                 >
                     <div className={styles.modalContainer}>
-                        <h2>demo</h2>
-                        <FontAwesomeIcon icon={faTimes} size={"2x"}
-                                         onClick={() => {
-                                             this.setIsOpen(false)
-                                         }}
-                        />
+                        <div className={styles.modalHeader}>
+                            <h2>
+                                <FormattedMessage id={'darband.foods.' + this.state.currentFood + '.header'}/>
+                            </h2>
+                            <FontAwesomeIcon icon={faTimes}
+                                             size={"2x"}
+                                             onClick={() => {
+                                                 this.setIsOpen(false, null)
+                                             }}
+                            />
+                        </div>
+                        <div className={styles.modalInfo}>
+                            <div className={styles.modalInfoText}>
+                                <div>
+                                    <p><FormattedMessage id={'darband.foods.' + this.state.currentFood + '.info'}/></p>
+                                </div>
+                                <div className={styles.modalIcons}>
+
+                                </div>
+                            </div>
+                            <div className={styles.modalPrice}>
+                                <p><FormattedMessage id={'darband.foods.' + this.state.currentFood + '.price'}/></p>
+                            </div>
+                        </div>
                     </div>
                 </Modal>
             </React.Fragment>

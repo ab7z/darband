@@ -56,7 +56,7 @@ a {
 }
 
 a:hover {
-    transform: translateY(-1.5rem);
+    transform: scale(1.05);
 }
 
 .sub a > span {
