@@ -10,6 +10,12 @@
     margin: 6rem 0;
 }
 
+.foods > p {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+}
+
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -72,11 +78,12 @@
     height: 70vh;
     transform: translate(-50%, -50%);
     background: linear-gradient(
-            rgba(0, 0, 0, .65),
-            rgba(0, 0, 0, .8)
+            rgba(0, 0, 0, .7),
+            rgba(0, 0, 0, .85)
     ), url("../../images/modal-background.jpg");
     background-size: cover;
     background-position: center;
+    /*background-position-x: 1%;*/
     background-repeat: no-repeat;
     color: white;
 }
@@ -91,8 +98,9 @@
     flex-grow: 1;
     font-size: 4rem;
     text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-top: 2rem;
+    letter-spacing: 1px;
+    word-spacing: 10px;
+    margin-top: 3rem;
 }
 
 .modalInfo {
@@ -110,7 +118,7 @@
     font-size: 2.7rem;
     letter-spacing: 1px;
     word-spacing: 3px;
-    line-height: 4rem;
+    line-height: 5rem;
 }
 
 .modalIcons {
@@ -118,7 +126,7 @@
 }
 
 .modalPrice {
-    font-size: 3rem;
+    font-size: 4.5rem;
     margin-top: 4rem;
     letter-spacing: 2px;
     font-weight: 300;
@@ -128,5 +136,17 @@
 @media all and (max-width: 768px) {
     .imageContainer {
         flex-basis: 100%;
+    }
+
+    .imageContainer > img {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+}
+
+@media all and (max-width: 425px) {
+    .imageContainer {
+        margin: 1rem 0;
+        border-radius: unset;
     }
 }

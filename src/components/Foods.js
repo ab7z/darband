@@ -32,6 +32,7 @@ class Foods extends React.Component {
             <React.Fragment>
                 <section className={styles.foods}>
                     <h2><FormattedMessage id={"darband.foods.title"}/></h2>
+                    <p><FormattedMessage id={'darband.foods.click'}/></p>
                     <div className={styles.container}>
                         {this.state.foods.map((food, index) =>
                             <div className={styles.imageContainer}
