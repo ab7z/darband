@@ -2,10 +2,9 @@ import React from 'react';
 import styles from '../styles/components/Contact.module.css';
 import {FormattedMessage} from "react-intl";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faGlassCheers} from "@fortawesome/free-solid-svg-icons";
-import {faHamburger} from "@fortawesome/free-solid-svg-icons/faHamburger";
 import {faLocationArrow} from "@fortawesome/free-solid-svg-icons/faLocationArrow";
 import {faPhoneAlt} from "@fortawesome/free-solid-svg-icons/faPhoneAlt";
+import {faTruck} from "@fortawesome/free-solid-svg-icons/faTruck";
 
 class Contact extends React.Component {
     render() {
@@ -24,10 +23,8 @@ class Contact extends React.Component {
                                 <FontAwesomeIcon icon={faLocationArrow} size={"2x"}/>
                             </a>
                             <a href="tel:004922418466380">
-                                <FormattedMessage id={"darband.contact.party1"}/>
-                                <FontAwesomeIcon icon={faGlassCheers} size={"2x"}/>
-                                <FormattedMessage id={"darband.contact.party2"}/>
-                                <FontAwesomeIcon icon={faHamburger} size={"2x"}/>
+                                <span>Catering</span>
+                                <FontAwesomeIcon icon={faTruck} size={"2x"}/>
                             </a>
                         </div>
                     </div>

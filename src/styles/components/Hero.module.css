@@ -1,21 +1,3 @@
-.heroContainer > h1 {
-    margin-bottom: 2rem;
-    letter-spacing: 4px;
-}
-
-.heroContainer > p {
-    font-size: 3rem;
-    text-transform: uppercase;
-    word-spacing: 3rem;
-    letter-spacing: 3px;
-}
-
-.heroContainer > h1, .heroContainer > p {
-    color: white;
-    text-align: center;
-    transform: translateY(-10rem);
-}
-
 .hero {
     background: linear-gradient(
             to bottom,
@@ -26,43 +8,26 @@
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
-}
-
-.heroContainer {
-    width: inherit;
-    height: inherit;
     display: flex;
-    flex-direction: column;
+    flex-flow: column nowrap;
     justify-content: center;
 }
 
-.hero > .heroContainer > svg {
-    width: 10%;
-    margin: 0 auto;
-    font-size: 1.5rem;
-    animation: toggleDown 7s infinite;
+.hero > h1, .hero > p {
+    color: white;
+    text-align: center;
 }
 
-@media all and (max-width: 320px) {
-    .heroContainer > h1 {
-        font-size: 8rem;
-    }
-
-    .hero > .heroContainer > svg {
-        transform: translateY(3rem);
-    }
+.hero > h1 {
+    margin-bottom: 2rem;
+    letter-spacing: 4px;
 }
 
-@keyframes toggleDown {
-    0% {
-        transform: translateY(calc(100vh - 70rem)) scale(3, 2);
-    }
-    50% {
-        transform: translateY(calc(100vh - 67rem)) scale(3, 2);
-    }
-    100% {
-        transform: translateY(calc(100vh - 70rem)) scale(3, 2);
-    }
+.hero > p {
+    font-size: 3rem;
+    text-transform: uppercase;
+    word-spacing: 3rem;
+    letter-spacing: 3px;
 }
