@@ -31,3 +31,9 @@
     word-spacing: 3rem;
     letter-spacing: 3px;
 }
+
+@media all and (max-width: 320px) {
+    .hero > h1 {
+        font-size: 8rem;
+    }
+}
