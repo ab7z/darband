@@ -10,7 +10,7 @@ class Contact extends React.Component {
     render() {
         return (
             <React.Fragment>
-                <section className={styles.contact}>
+                <section className={[styles.contact, (this.props.webp ? styles.contact_webp : styles.contact_png)].join(' ')}>
                     <div className={styles.container}>
                         <h2><FormattedMessage id={"darband.contact.title"}/></h2>
                         <div className={styles.sub}>

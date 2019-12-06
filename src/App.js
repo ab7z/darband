@@ -10,15 +10,18 @@ import Gallery from "./components/Gallery";
 import Opening from "./components/Opening";
 
 function App() {
+    let iosApp = navigator.userAgent.match(/(iPod|iPhone|iPad)/) && navigator.userAgent.match(/AppleWebKit/);
+    let webpEnabled = window.safari === undefined && !iosApp;
+
     return (
         <div className="App">
-            <Hero/>
+            <Hero webp={webpEnabled}/>
             <Description/>
-            <Foods/>
+            <Foods webp={webpEnabled}/>
             <Testimonials/>
-            <Gallery/>
+            <Gallery webp={webpEnabled}/>
             <Opening/>
-            <Contact/>
+            <Contact webp={webpEnabled}/>
             <Footer/>
         </div>
     );

@@ -39,7 +39,8 @@ class Foods extends React.Component {
                                          onClick={() => this.setIsOpen(true, food)}
                                          id={food}
                                     >
-                                        <img src={require('../images/' + food + '.jpeg')} alt="" height={400}/>
+                                        <img src={require('../images/' + food + (this.props.webp ? '.webp' : '.jpeg'))}
+                                             alt="" height={400}/>
                                     </div>
                                     <h2>
                                         <FormattedMessage id={'darband.foods.' + food + '.header'}/>

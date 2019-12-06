@@ -14,7 +14,8 @@ class Gallery extends React.Component {
                         {array.map((image, index) =>
                             <React.Fragment key={index}>
                                 <div className={styles.imageContainer}>
-                                    <img src={require(`../images/g${index + 1}.jpeg`)} alt=""/>
+                                    <img src={require("../images/g" + (index + 1) + (this.props.webp ? ".webp" : ".jpeg"))}
+                                         alt=""/>
                                 </div>
                             </React.Fragment>
                         )}

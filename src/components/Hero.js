@@ -6,7 +6,7 @@ class Hero extends React.Component {
     render() {
         return (
             <React.Fragment>
-                <header className={styles.hero}>
+                <header className={[styles.hero, (this.props.webp ? styles.hero_webp : styles.hero_jpg)].join(' ')}>
                     <h1>
                         <FormattedMessage id={"darband.hero.h1.title"}/>
                     </h1>
