@@ -1,4 +1,23 @@
 .hero {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+.hero_webp {
+    background: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, .6),
+            rgba(0, 0, 0, .3)
+    ), url("../../images/hero.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.heop_jpg {
     background: linear-gradient(
             to bottom,
             rgba(0, 0, 0, .6),
@@ -8,11 +27,6 @@
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
 }
 
 .hero > h1, .hero > p {
