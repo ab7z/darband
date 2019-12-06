@@ -27,27 +27,18 @@ class Description extends React.Component {
                             <h3>
                                 <FormattedMessage id={"darband.features.uptime.h3"}/>
                             </h3>
-                            <p>
-                                <FormattedMessage id={"darband.lorem"}/>
-                            </p>
                         </div>
                         <div className={styles.card}>
                             <FontAwesomeIcon icon={faStopwatch} size={"4x"}/>
                             <h3>
                                 <FormattedMessage id={"darband.features.time.h3"}/>
                             </h3>
-                            <p>
-                                <FormattedMessage id={'darband.lorem'}/>
-                            </p>
                         </div>
                         <div className={styles.card}>
                             <FontAwesomeIcon icon={faSeedling} size={"4x"}/>
                             <h3>
                                 <FormattedMessage id={"darband.features.healthy.h3"}/>
                             </h3>
-                            <p>
-                                <FormattedMessage id={"darband.lorem"}/>
-                            </p>
                         </div>
                     </div>
                 </section>

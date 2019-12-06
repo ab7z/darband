@@ -28,10 +28,17 @@ class Footer extends React.Component {
                         <span> &copy; {new Date().getFullYear()}</span>
                         <span> &minus; Siegstraße 28, 53757 Sankt Augustin</span>
                     </div>
-                    <div className={styles.imprint}
-                         onClick={() => {this.setShowImprint(true)}}
-                    >
-                        <FormattedMessage id={'darband.impress'}/>
+                    <div className={styles.subContainer}>
+                        <div className={styles.imprint}
+                             onClick={() => {
+                                 this.setShowImprint(true)
+                             }}
+                        >
+                            <FormattedMessage id={'darband.impress'}/>
+                        </div>
+                        <div className={styles.privacyProtection}>
+                            Datenschutz
+                        </div>
                     </div>
                     <div>
                         <FontAwesomeIcon icon={faReact} size={"2x"}/>
@@ -41,7 +48,9 @@ class Footer extends React.Component {
                 </footer>
 
                 <Modal isOpen={this.state.showImprint}
-                       onRequestClose={() => {this.setShowImprint(false)}}
+                       onRequestClose={() => {
+                           this.setShowImprint(false)
+                       }}
                 >
                     UNDER CONSTRUCTION
                 </Modal>

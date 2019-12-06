@@ -1,0 +1,31 @@
+.gallery {
+    background-color: #0000000d;
+    margin-bottom: 0;
+}
+
+.heading {
+    text-align: center;
+    font-size: 4rem;
+    padding: 7rem 0;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 auto;
+    padding-bottom: 10rem;
+}
+
+.imageContainer {
+    width: 500px;
+    /*height: 500px;*/
+    overflow: hidden;
+    flex: 1 1 auto;
+    margin: 1rem;
+}
+
+.imageContainer > img {
+    width: 100%;
+}

@@ -23,121 +23,54 @@
     margin-bottom: 12rem;
 }
 
+.foodContainer {
+    display: flex;
+    flex-flow: column nowrap;
+    border: 1px solid transparent;
+    align-items: center;
+    margin-bottom: 1rem;
+    flex: 1 0 50%;
+}
+
+.foodContainer > h2 {
+    font-size: 2.8rem;
+    margin: 1.5rem 0;
+    text-align: center;
+    color: #26de81;
+}
+
+.foodContainer > p {
+    width: 60%;
+    margin: 1.5rem 0;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #3867d6;
+}
+
+.foodContainer > p:first-of-type {
+    font-size: 2.1rem;
+    color: #fa8231;
+}
+
 .imageContainer {
-    flex-basis: 40%;
+    flex-basis: 80%;
     margin: 1rem;
     overflow: hidden;
     background-color: black;
     border-radius: 1rem;
+    height: 400px;
 }
 
 .imageContainer img {
-    width: 100%;
     transform: scale(1.13);
-    transition: transform .4s, opacity .4s;
-    opacity: .7;
+    transition: transform .4s;
 }
 
 .imageContainer img:hover {
     transform: scale(1.25);
-    opacity: 1;
-    cursor: pointer;
-}
-
-.modalContainer {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
-
-.modalOverlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, .5);
-}
-
-.modalContent {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    right: 40px;
-    bottom: 40px;
-    border: 1px solid #ccc;
-    background: rgb(255, 255, 255);
-    overflow: auto;
-    overflow-scrolling: touch;
-    border-radius: 1rem;
-    outline: none;
-    padding: 20px;
-    width: 70%;
-    margin: 0 auto;
-    max-height: 90vh;
-    height: 70vh;
-    transform: translate(-50%, -50%);
-    background: linear-gradient(
-            rgba(0, 0, 0, .7),
-            rgba(0, 0, 0, .85)
-    ), url("../../images/modal-background.jpg");
-    background-size: cover;
-    background-position: center;
-    /*background-position-x: 1%;*/
-    background-repeat: no-repeat;
-    color: white;
-}
-
-.modalHeader {
-    display: flex;
-    justify-content: space-between;
-}
-
-.modalHeader > h2 {
-    text-align: center;
-    flex-grow: 1;
-    font-size: 4rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    word-spacing: 10px;
-    margin-top: 3rem;
-}
-
-.modalInfo {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 80%;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.modalInfoText {
-    text-align: center;
-    width: 85%;
-    margin: 8rem auto 0;
-    font-size: 2.7rem;
-    letter-spacing: 1px;
-    word-spacing: 3px;
-    line-height: 5rem;
-}
-
-.modalIcons {
-
-}
-
-.modalPrice {
-    font-size: 4.5rem;
-    margin-top: 4rem;
-    letter-spacing: 2px;
-    font-weight: 300;
-    color: #20bf6b;
 }
 
 @media all and (max-width: 768px) {
-    .imageContainer {
-        flex-basis: 100%;
-    }
-
     .imageContainer > img {
         transform: scale(1.2);
         opacity: 1;
@@ -148,5 +81,25 @@
     .imageContainer {
         margin: 1rem 0;
         border-radius: unset;
+    }
+
+    .imageContainer > img {
+        width: 100%;
+    }
+
+    .foodContainer {
+        flex-basis: 100%;
+    }
+}
+
+@media all and (max-width: 375px) {
+    .imageContainer > img {
+        height: 300px;
+    }
+}
+
+@media all and (max-width: 320px) {
+    .imageContainer > img {
+        height: 280px;
     }
 }

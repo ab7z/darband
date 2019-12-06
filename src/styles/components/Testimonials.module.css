@@ -32,6 +32,10 @@
     width: 100%;
 }
 
+.container > a {
+    margin-top: 10rem !important;
+}
+
 .card {
     display: flex;
     flex-direction: column;
@@ -64,7 +68,7 @@
     font-style: italic;
 }
 
-.stars * {
+.stars {
     color: #f7b731;
 }
 
