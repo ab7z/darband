@@ -14,7 +14,9 @@ function App() {
     let iosApp = navigator.userAgent.match(/(iPod|iPhone|iPad)/) && navigator.userAgent.match(/AppleWebKit/);
     let webpEnabled = window.safari === undefined && !iosApp;
 
-    LogRocket.init('s3mkoe/darband');
+    if (process.env.NODE_ENV === 'production') {
+        LogRocket.init('s3mkoe/darband');
+    }
 
     return (
         <div className="App">

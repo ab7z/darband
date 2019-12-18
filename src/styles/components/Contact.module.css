@@ -125,6 +125,10 @@ a:hover > svg {
 }
 
 @media all and (max-width: 375px) {
+    .contact {
+        height: 100vh;
+    }
+
     a {
         margin-right: 0;
         margin-left: 0;
@@ -132,6 +136,20 @@ a:hover > svg {
 
     a:last-of-type {
         padding: 1rem 3rem;
+    }
+
+    .container {
+        width: 95%;
+        justify-content: center;
+        height: inherit;
+    }
+
+    .container > h2 {
+        margin: 0;
+    }
+
+    .sub {
+        margin-bottom: 10rem;
     }
 }
 

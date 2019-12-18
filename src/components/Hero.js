@@ -4,6 +4,7 @@ import {FormattedMessage} from "react-intl";
 
 class Hero extends React.Component {
     render() {
+        console.log('webp', this.props.webp);
         return (
             <React.Fragment>
                 <header className={[styles.hero, (this.props.webp ? styles.hero_webp : styles.hero_jpg)].join(' ')}>
