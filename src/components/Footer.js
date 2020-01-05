@@ -61,12 +61,12 @@ class Footer extends React.Component {
                         <h2>Impressum</h2>
 
                         <h2>Angaben gem&auml;&szlig; &sect; 5 TMG</h2>
-                        <p>&#91;Vorname&#93; &#91;Nachname&#93;<br/>
-                            &#91;Stra&szlig;e&#93;<br/>
-                            &#91;Postleitzahl&#93; &#91;Ort&#93;</p>
+                        <p>Gholamhossein Shah Hosseini<br/>
+                            Siegstraße 28<br/>
+                            53757 Sankt Augustin</p>
 
                         <h2>Kontakt</h2>
-                        <p>E-Mail: </p>
+                        <p>Telefon: 02241 8466380 </p>
 
                         <h3>Haftung f&uuml;r Inhalte</h3>
                         <p>Als Diensteanbieter sind wir gem&auml;&szlig; &sect; 7
