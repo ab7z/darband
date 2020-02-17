@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from '../styles/components/Foods.module.css';
 import {FormattedMessage} from "react-intl";
-import Modal from 'react-modal';
 
 class Foods extends React.Component {
     constructor(props) {
@@ -11,7 +10,6 @@ class Foods extends React.Component {
             isOpen: false,
             currentFood: null
         };
-        Modal.setAppElement('#root');
     }
 
     icons = {
