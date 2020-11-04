@@ -17,8 +17,9 @@ const Modal = () => {
         >
             <div className={ styles.wrapper }>
                 <h2 className={ styles.subHeading }>Liebe Gäste</h2>
-                <p>Ab <strong>22.07.2020</strong> bis <strong>27.07.2020</strong> bleibt unser Geschäft geschlossen.
-                    Ab <strong>28.07.2020</strong> sind wir wieder wie gewohnt für Sie da.
+                <p style={{textAlign: 'center'}}>
+                    Aufgrund der Corona Reglungen können Sie gerne Ihre Bestellung bei uns abholen.<br/>
+                    In naher Zukunft wird die Lieferung möglich sein.
                 </p>
                 <p style={ { fontSize: '2.2rem' } }><i>Ihr Darband Team</i></p>
                 <button onClick={ () => controlIsOpen(false) }>ok</button>

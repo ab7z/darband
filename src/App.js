@@ -32,7 +32,7 @@ function App() {
             <Contact webp={webpEnabled}/>
             <Footer/>
             {
-                dateObject.getDate() <= 27 && dateObject.getMonth() + 1 === 7 && dateObject.getFullYear() === 2020
+                dateObject.getDate() <= 30 && dateObject.getMonth() + 1 === 11 && dateObject.getFullYear() === 2020
                 && <Modal/>
             }
         </div>
