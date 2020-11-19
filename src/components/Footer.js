@@ -40,9 +40,6 @@ class Footer extends React.Component {
                         >
                             <FormattedMessage id={'darband.impress'}/>
                         </div>
-                        <div className={styles.privacyProtection} onClick={() => this.setShowPrivacyPolicies(true)}>
-                            Datenschutz
-                        </div>
                     </div>
                     <div>
                         <FontAwesomeIcon icon={faReact} size={"2x"}/>
