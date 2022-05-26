@@ -30,7 +30,7 @@ class Footer extends React.Component {
                     <div className={styles.rights}>
                         <FormattedMessage id={'darband.rights'}/>
                         <span> &copy; {new Date().getFullYear()}</span>
-                        <span> &minus; Siegstraße 28, 53757 Sankt Augustin</span>
+                        <span> &minus; Offenbach Str. 41, 53844 Troisdorf</span>
                     </div>
                     <div className={styles.subContainer}>
                         <div className={styles.imprint}
