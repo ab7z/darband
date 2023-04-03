@@ -27,8 +27,8 @@ function App() {
             <Contact webp={webpEnabled}/>
             <Footer/>
             {
-                dateObject.getDate() <= 30 && dateObject.getMonth() + 1 === 11 && dateObject.getFullYear() === 2020
-                && <Modal/>
+                dateObject.getDate() <= 17 && (dateObject.getMonth() + 1) === 4 && dateObject.getFullYear() === 2023
+                ? <Modal/> : null
             }
         </div>
     );
