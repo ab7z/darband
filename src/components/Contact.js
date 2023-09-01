@@ -18,7 +18,7 @@ class Contact extends React.Component {
                                 <FormattedMessage id={"darband.contact.call"}/>
                                 <FontAwesomeIcon icon={faPhoneAlt} size={"2x"}/>
                             </a>
-                            <a href="https://www.google.com/maps/dir//Darband+Iranian+Restaurant,+Siegstraße,+Sankt+Augustin/@50.7905699,7.0957355,12z/" target={"_blank"}>
+                            <a href="https://www.google.com/maps/dir//Darband+Iranian+Restaurant,+Siegstraße,+Sankt+Augustin/@50.7905699,7.0957355,12z/" target={"_blank"} rel={"noreferrer noopener"}>
                                 <FormattedMessage id={"darband.contact.route"}/>
                                 <FontAwesomeIcon icon={faLocationArrow} size={"2x"}/>
                             </a>
