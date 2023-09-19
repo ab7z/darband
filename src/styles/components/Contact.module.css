@@ -13,15 +13,6 @@
     background-size: cover;
 }
 
-.contact_png {
-    background: linear-gradient(
-            to bottom,
-            rgba(0, 0, 0, .4),
-            rgba(0, 0, 0, .2)
-    ), url("../../images/darband.png");
-    background-size: cover;
-}
-
 .container {
     width: 80%;
     margin: 0 auto;
