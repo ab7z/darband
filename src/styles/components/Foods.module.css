@@ -1,104 +1,118 @@
 .foods {
-    display: flex;
-    flex-direction: column;
-    background-color: rgba(0, 0, 0, .05);
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
 .foods > h2 {
-    text-align: center;
-    font-size: 4rem;
-    margin: 6rem 0;
+  text-align: center;
+  font-size: 4rem;
+  margin: 6rem 0;
+}
+
+.foods h3 {
+  text-align: center;
+  font-size: 3rem;
 }
 
 .foods > p {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 4rem;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 4rem;
 }
 
 .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 12rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 4rem;
 }
 
 .foodContainer {
-    display: flex;
-    flex-flow: column nowrap;
-    border: 1px solid transparent;
-    align-items: center;
-    margin-bottom: 1rem;
-    flex: 1 0 45%;
+  display: flex;
+  flex-flow: column nowrap;
+  border: 1px solid transparent;
+  align-items: center;
+  margin-bottom: 1rem;
+  flex: 1 0 45%;
 }
 
 .foodContainer > h2 {
-    font-size: 2.8rem;
-    margin: 1.5rem 0;
-    text-align: center;
-    color: #000;
+  font-size: 2.8rem;
+  margin: 1.5rem 0;
+  text-align: center;
+  color: #000;
 }
 
 .foodContainer > p {
-    width: 60%;
-    margin: 1.5rem 0;
-    font-size: 2.5rem;
-    text-align: center;
-    color: #000;
+  width: 60%;
+  margin: 1.5rem 0;
+  font-size: 2.5rem;
+  text-align: center;
+  color: #000;
 }
 
 .foodContainer > p:first-of-type {
-    font-size: 2.1rem;
-    color: rgba(0,0,0,.6);
+  font-size: 2.1rem;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .imageContainer {
-    margin: 1rem;
-    overflow: hidden;
-    background-color: black;
-    border-radius: 1rem;
-    height: 400px;
+  margin: 1rem;
+  overflow: hidden;
+  background-color: black;
+  border-radius: 1rem;
+  height: 400px;
 }
 
 .imageContainer img {
-    transform: scale(1.13);
-    transition: transform .4s;
+  transform: scale(1.13);
+  transition: transform 0.4s;
 }
 
 .imageContainer img:hover {
-    transform: scale(1.25);
+  transform: scale(1.25);
+}
+
+.menuContainer {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 5rem 0 15rem 0;
+  gap: 2rem;
 }
 
 @media all and (max-width: 768px) {
-    .imageContainer > img {
-        transform: scale(1.2);
-        opacity: 1;
-    }
+  .imageContainer > img {
+    transform: scale(1.2);
+    opacity: 1;
+  }
 }
 
 @media all and (max-width: 425px) {
-    .imageContainer {
-        margin: 1rem 0;
-        border-radius: unset;
-    }
+  .imageContainer {
+    margin: 1rem 0;
+    border-radius: unset;
+  }
 
-    .imageContainer > img {
-        width: 100%;
-    }
+  .imageContainer > img {
+    width: 100%;
+  }
 
-    .foodContainer {
-        flex-basis: 100%;
-    }
+  .foodContainer {
+    flex-basis: 100%;
+  }
 }
 
 @media all and (max-width: 375px) {
-    .imageContainer > img {
-        height: 300px;
-    }
+  .imageContainer > img {
+    height: 300px;
+  }
 }
 
 @media all and (max-width: 320px) {
-    .imageContainer > img {
-        height: 280px;
-    }
+  .imageContainer > img {
+    height: 280px;
+  }
 }
