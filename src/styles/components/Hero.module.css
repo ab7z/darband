@@ -4,8 +4,6 @@
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-}
-.hero_webp {
     background: linear-gradient(
             to bottom,
             rgba(0, 0, 0, .6),
