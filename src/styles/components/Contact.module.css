@@ -1,151 +1,138 @@
 .contact {
-    width: 100%;
-    height: 100vh;
-    margin-bottom: 0;
-}
-
-.contact_webp {
-    background: linear-gradient(
-            to bottom,
-            rgba(0, 0, 0, .4),
-            rgba(0, 0, 0, .2)
-    ), url("../../images/darband.webp");
-    background-size: cover;
+  width: 100%;
+  height: 100vh;
+  margin-bottom: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url("../../images/darband.webp");
+  background-size: cover;
+  background-position: center;
 }
 
 .container {
-    width: 80%;
-    margin: 0 auto;
-    height: 100%;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .container > h2 {
-    text-align: center;
-    font-size: 4rem;
-    margin-top: 10rem;
+  text-align: center;
+  font-size: 4rem;
+  margin-top: 10rem;
 }
 
 .sub {
-    width: 50%;
-    height: 50%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 4rem;
-    justify-content: space-evenly;
-    align-items: center;
-    transform: translateY(10rem);
+  width: 50%;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 4rem;
+  justify-content: space-evenly;
+  align-items: center;
+  transform: translateY(10rem);
 }
 
 a {
-    padding: 2rem 5rem;
-    background-color: rgba(38, 222, 129, .75);
-    font-size: 2.3rem;
-    color: white;
-    text-decoration: none;
-    transition: transform .3s ease-in-out;
-    text-align: center;
-    border-radius: 10px;
-    flex: 1 0 50%;
-    margin: 10px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+  padding: 2rem 5rem;
+  background-color: rgba(38, 222, 129, 0.75);
+  font-size: 2.3rem;
+  color: white;
+  text-decoration: none;
+  transition: transform 0.3s ease-in-out;
+  text-align: center;
+  border-radius: 10px;
+  flex: 1 0 50%;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
 
 a > svg {
-    transition: transform .2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
 }
 
 a:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 a:hover > svg {
-    transform: skew(-20deg);
+  transform: skew(-20deg);
 }
 
 .sub a > span {
-    margin: 0 2rem;
+  margin: 0 2rem;
 }
 
 .call:hover {
-    transform: translateY(-1rem);
+  transform: translateY(-1rem);
 }
 
 @media (hover: none) {
-    a:hover {
-        transform: translateY(0);
-    }
+  a:hover {
+    transform: translateY(0);
+  }
 }
 
 @media all and (max-width: 768px) {
-    .sub {
-        width: 100%;
-        height: auto;
-    }
+  .sub {
+    width: 100%;
+    height: auto;
+  }
 
-    a {
-        padding: 1rem 4rem;
-        flex-basis: 0;
-        height: auto;
-    }
+  a {
+    padding: 1rem 4rem;
+    flex-basis: 0;
+    height: auto;
+  }
 
-    a:last-of-type {
-        margin-top: 2rem;
-    }
-
-    .contact {
-        background-position-x: -18rem;
-    }
+  a:last-of-type {
+    margin-top: 2rem;
+  }
 }
 
 @media all and (max-width: 425px) {
-    a:last-of-type {
-        margin-top: 1rem;
-    }
-
-    .contact {
-        background-position-x: -40rem;
-    }
+  a:last-of-type {
+    margin-top: 1rem;
+  }
 }
 
 @media all and (max-width: 375px) {
-    .contact {
-        height: 100vh;
-    }
+  .contact {
+    height: 100vh;
+  }
 
-    a {
-        margin-right: 0;
-        margin-left: 0;
-    }
+  a {
+    margin-right: 0;
+    margin-left: 0;
+  }
 
-    a:last-of-type {
-        padding: 1rem 3rem;
-    }
+  a:last-of-type {
+    padding: 1rem 3rem;
+  }
 
-    .container {
-        width: 95%;
-        justify-content: center;
-        height: inherit;
-    }
+  .container {
+    width: 95%;
+    justify-content: center;
+    height: inherit;
+  }
 
-    .container > h2 {
-        margin: 0;
-    }
+  .container > h2 {
+    margin: 0;
+  }
 
-    .sub {
-        margin-bottom: 10rem;
-    }
+  .sub {
+    margin-bottom: 10rem;
+  }
 }
 
 @media all and (max-width: 320px) {
-    .container {
-        width: 95%;
-    }
+  .container {
+    width: 95%;
+  }
 }

@@ -1,9 +1,10 @@
 import React from "react"
+import "react-medium-image-zoom/dist/styles.css"
 import Contact from "./components/Contact"
 import Description from "./components/Description"
 import Foods from "./components/Foods"
 import Footer from "./components/Footer"
-import Gallery from "./components/Gallery"
+import GalleryComponent from "./components/GalleryComponent"
 import Hero from "./components/Hero"
 import Modal from "./components/Modal"
 import Opening from "./components/Opening"
@@ -17,19 +18,19 @@ function App() {
   const dateObject = new Date()
 
   return (
-    <div className='App'>
+    <>
       <Hero webp={webpEnabled} />
       <Description />
       <Foods webp={webpEnabled} />
       <Testimonials />
-      <Gallery webp={webpEnabled} />
+      <GalleryComponent />
       <Opening />
       <Contact webp={webpEnabled} />
       <Footer />
       {dateObject.getDate() <= 18 && dateObject.getMonth() + 1 === 9 && dateObject.getFullYear() === 2023 ? (
         <Modal />
       ) : null}
-    </div>
+    </>
   )
 }
 

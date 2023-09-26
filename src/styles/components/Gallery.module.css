@@ -1,31 +1,48 @@
 .gallery {
-    background-color: #0000000d;
-    margin-bottom: 0;
+  background-color: #0000000d;
+  margin: 0;
+  padding: 5rem 0 10rem;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 3rem;
 }
 
 .heading {
-    text-align: center;
-    font-size: 4rem;
-    padding: 7rem 0;
+  text-align: center;
+  font-size: 4rem;
 }
 
 .container {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-flow: row wrap;
-    margin: 0 auto;
-    padding-bottom: 10rem;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+  justify-content: center;
 }
 
-.imageContainer {
-    width: 500px;
-    /*height: 500px;*/
+.container div {
+  display: flex;
+  justify-content: center;
+}
+
+.container img {
+  width: 80%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+@media all and (min-width: 1024px) {
+  .container div {
+    display: block;
+    flex-basis: 30%;
     overflow: hidden;
-    flex: 1 1 auto;
-    margin: 1rem;
-}
+  }
 
-.imageContainer > img {
+  .container img {
     width: 100%;
+    object-fit: unset;
+  }
 }

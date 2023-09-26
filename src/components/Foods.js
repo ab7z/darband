@@ -1,7 +1,5 @@
 import React from "react"
-import { FormattedMessage } from "react-intl"
 import Zoom from "react-medium-image-zoom"
-import "react-medium-image-zoom/dist/styles.css"
 import { FoodObjects } from "../data/foods"
 import { Menu } from "../data/menu"
 import styles from "../styles/components/Foods.module.css"
@@ -9,37 +7,30 @@ import styles from "../styles/components/Foods.module.css"
 export default function Foods() {
   return (
     <section className={styles.foods}>
-      <h2>
-        <FormattedMessage id={"darband.foods.title"} />
-      </h2>
+      <h2>Unser Menü</h2>
 
       <div className={styles.container}>
         {FoodObjects.map((food, index) => (
-          <React.Fragment key={index}>
-            <div className={styles.foodContainer}>
-              <div
-                className={styles.imageContainer}
-                key={food.header + index}
-                id={food.header}
-              >
-                <img
-                  src={require("../images/" + (index + 1) + ".webp")}
-                  alt={`${food.header}`}
-                  height={400}
-                />
-              </div>
-              <h2>{food.header}</h2>
-              <p>{food.info}</p>
-              <p>{food.price}</p>
-            </div>
-          </React.Fragment>
+          <div
+            key={index}
+            className={styles.food}
+          >
+            <img
+              key={food.header + index}
+              src={require("../images/" + (index + 1) + ".webp")}
+              alt={`${food.header}`}
+              height={400}
+            />
+
+            <h2>{food.header}</h2>
+            <p>{food.info}</p>
+            <p>{food.price}</p>
+          </div>
         ))}
       </div>
 
       <div className={styles.menu}>
-        <h3>
-          <FormattedMessage id={"darband.foods.menu"} />
-        </h3>
+        <h3>Entnehmen Sie bitte unser vollständiges Menü hier</h3>
 
         <div className={styles.menuContainer}>
           {Menu.map((m, i) => (
