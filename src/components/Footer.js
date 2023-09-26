@@ -1,7 +1,3 @@
-import { faGithub } from "@fortawesome/free-brands-svg-icons/faGithub"
-import { faReact } from "@fortawesome/free-brands-svg-icons/faReact"
-import { faCode } from "@fortawesome/free-solid-svg-icons"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import React from "react"
 import Modal from "react-modal"
 import styles from "../styles/components/Footer.module.css"
@@ -26,10 +22,11 @@ class Footer extends React.Component {
     return (
       <React.Fragment>
         <footer>
-          <div className={styles.rights}>
-            Alle Rechte vorbehalten © <span> &copy; {new Date().getFullYear()}</span>
-            <span> &minus; Offenbach Str. 41, 53844 Troisdorf</span>
-          </div>
+          <p className={styles.rights}>
+            Alle Rechte vorbehalten &copy; {new Date().getFullYear()}
+            &minus; Offenbach Str. 41, 53844 Troisdorf
+          </p>
+
           <div className={styles.subContainer}>
             <div
               className={styles.imprint}
@@ -39,20 +36,6 @@ class Footer extends React.Component {
             >
               Impressum
             </div>
-          </div>
-          <div>
-            <FontAwesomeIcon
-              icon={faReact}
-              size={"2x"}
-            />
-            <FontAwesomeIcon
-              icon={faCode}
-              size={"1x"}
-            />
-            <FontAwesomeIcon
-              icon={faGithub}
-              size={"2x"}
-            />
           </div>
         </footer>
 
