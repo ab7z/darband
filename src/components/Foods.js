@@ -30,7 +30,7 @@ export default function Foods() {
       </div>
 
       <div className={styles.menu}>
-        <h3>Entnehmen Sie bitte unser vollständiges Menü hier</h3>
+        <h3>Du kannst unser vollständiges Menü hier entnehmen</h3>
 
         <div className={styles.menuContainer}>
           {Menu.map((m, i) => (
