@@ -12,7 +12,8 @@ import Testimonials from "./components/Testimonials"
 import "./styles/App.css"
 
 function App() {
-  let iosApp = navigator.userAgent.match(/(iPod|iPhone|iPad)/) && navigator.userAgent.match(/AppleWebKit/)
+  let iosApp =
+    navigator.userAgent.match(/(iPod|iPhone|iPad)/) && navigator.userAgent.match(/AppleWebKit/)
   let webpEnabled = window.safari === undefined && !iosApp
 
   const dateObject = new Date()
@@ -27,7 +28,9 @@ function App() {
       <Opening />
       <Contact webp={webpEnabled} />
       <Footer />
-      {dateObject.getDate() <= 18 && dateObject.getMonth() + 1 === 9 && dateObject.getFullYear() === 2023 ? (
+      {dateObject.getDate() <= 20 &&
+      dateObject.getMonth() + 1 === 7 &&
+      dateObject.getFullYear() === 2024 ? (
         <Modal />
       ) : null}
     </>
