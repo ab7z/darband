@@ -1,7 +1,5 @@
 import React from "react"
-import Zoom from "react-medium-image-zoom"
 import { FoodObjects } from "../data/foods"
-import { Menu } from "../data/menu"
 import styles from "../styles/components/Foods.module.css"
 
 export default function Foods() {
@@ -28,21 +26,21 @@ export default function Foods() {
         ))}
       </div>
 
-      <div className={styles.menu}>
-        <h3>Du kannst unser vollständiges Menü hier entnehmen</h3>
+      {/*<div className={styles.menu}>*/}
+      {/*  <h3>Du kannst unser vollständiges Menü hier entnehmen</h3>*/}
 
-        <div className={styles.menuContainer}>
-          {Menu.map((m, i) => (
-            <Zoom key={`menu-image-${m.name}-${i}`}>
-              <img
-                src={require(`../images/menu/${m.imageName}`)}
-                alt={`${m.name}`}
-                height={250}
-              />
-            </Zoom>
-          ))}
-        </div>
-      </div>
+      {/*  <div className={styles.menuContainer}>*/}
+      {/*    {Menu.map((m, i) => (*/}
+      {/*      <Zoom key={`menu-image-${m.name}-${i}`}>*/}
+      {/*        <img*/}
+      {/*          src={require(`../images/menu/${m.imageName}`)}*/}
+      {/*          alt={`${m.name}`}*/}
+      {/*          height={250}*/}
+      {/*        />*/}
+      {/*      </Zoom>*/}
+      {/*    ))}*/}
+      {/*  </div>*/}
+      {/*</div>*/}
     </section>
   )
 }

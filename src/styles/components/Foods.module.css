@@ -19,6 +19,7 @@
   display: flex;
   flex-flow: column nowrap;
   gap: 3rem;
+  margin-bottom: 10rem;
 }
 
 .food {
