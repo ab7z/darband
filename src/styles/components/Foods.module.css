@@ -10,9 +10,15 @@
   margin: 6rem 0;
 }
 
+.foods h3 {
+  text-align: center;
+  font-size: 3rem;
+}
+
 .container {
   display: flex;
   flex-flow: column nowrap;
+  gap: 3rem;
 }
 
 .food {
@@ -22,13 +28,14 @@
 }
 
 .food > img {
-  width: 100%;
+  width: 80%;
   height: auto;
 }
 
 .food > h2 {
   font-size: 2.5rem;
-  margin: 1.5rem 0;
+  margin-top: 30px;
+  margin-bottom: 0;
   text-align: center;
   color: #000;
 }
@@ -36,16 +43,8 @@
 .food > p {
   font-size: 2rem;
   padding: 0 2rem;
-  text-align: justify;
+  text-align: center;
   color: rgba(0, 0, 0, 0.85);
-}
-
-.food > p:last-of-type {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: rgba(0, 0, 0, 1);
-  margin: 0 0 5rem 0;
-  margin-top: auto;
 }
 
 .menu {
@@ -54,11 +53,6 @@
   align-items: center;
   justify-content: center;
   margin: 2rem 0 15rem;
-}
-
-.foods h3 {
-  text-align: center;
-  font-size: 3rem;
 }
 
 .menuContainer {
@@ -81,12 +75,16 @@
   }
 
   .food > img {
-    width: 100%;
+    width: 80%;
     height: auto;
     border-radius: 20px;
     transition-property: transform;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 150ms;
+  }
+
+  .food > p {
+    text-align: justify;
   }
 
   .menuContainer {
@@ -102,6 +100,7 @@
 
 @media (pointer: fine) and (hover: hover) {
   .food img:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
+    transition: all 150ms ease-in-out;
   }
 }

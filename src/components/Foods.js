@@ -24,7 +24,6 @@ export default function Foods() {
 
             <h2>{food.header}</h2>
             <p>{food.info}</p>
-            <p>{food.price}</p>
           </div>
         ))}
       </div>
