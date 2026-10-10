@@ -16,8 +16,6 @@ function App() {
     navigator.userAgent.match(/(iPod|iPhone|iPad)/) && navigator.userAgent.match(/AppleWebKit/)
   let webpEnabled = window.safari === undefined && !iosApp
 
-  const dateObject = new Date()
-
   return (
     <>
       <Hero webp={webpEnabled} />
@@ -28,11 +26,7 @@ function App() {
       <Opening />
       <Contact webp={webpEnabled} />
       <Footer />
-      {dateObject.getDate() <= 20 &&
-      dateObject.getMonth() + 1 === 7 &&
-      dateObject.getFullYear() === 2024 ? (
-        <Modal />
-      ) : null}
+      <Modal />
     </>
   )
 }

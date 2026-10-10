@@ -16,13 +16,15 @@ const Modal = () => {
       onRequestClose={() => controlIsOpen(false)}
     >
       <div className={styles.wrapper}>
-        <h2 className={styles.subHeading}>Liebe Gäste</h2>
+        <h2 className={styles.subHeading}>Liebe Gäste,</h2>
         <p>
-          Ab <strong>02.07.2024</strong> bis <strong>20.07.2024</strong> bleibt unser Geschäft
-          geschlossen. Ab <strong>20.07.2024</strong> sind wir wieder wie gewohnt für Sie da.
+          aus gesundheitlichen Gründen bleibt unser Restaurant vorübergehend geschlossen.
+        </p>
+        <p>
+          Vielen Dank für Ihr Verständnis. Wir hoffen, Sie bald wieder bei uns begrüßen zu dürfen.
         </p>
         <p style={{ fontSize: "2.2rem" }}>
-          <i>Ihr Darband Team</i>
+          <i>Ihr Restaurant-Team</i>
         </p>
         <button onClick={() => controlIsOpen(false)}>ok</button>
       </div>
